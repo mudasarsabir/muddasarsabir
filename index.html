@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import fontawesome.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -15,46 +17,50 @@
     
     <div class="navbar-fixed">
             <nav>
-                <div class="nav-wrapper green z-depth-3">
-                  <a href="#" class="brand-logo t2"><img src="img/logo.png" alt="Logo Image"></a>
-                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <div class="nav-wrapper white hoverable">
+                  <a href="#" class="brand-logo t1"><img src="img/logo.png" alt="Logo Image"></a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger t4"><i class="material-icons">menu</i></a>
                   <ul class="right">
-                  <li class="waves-effect waves-light hide-on-large-only"><a href="#"><i class="material-icons">search</i></a></li>
+                  <li class="waves-effect tooltipped hide-on-large-only hoverable" data-position="bottom" data-tooltip="search"><a href="#"><i class="material-icons t4">search</i></a></li>
                   </ul>
                   <ul class="right hide-on-med-and-down">
-                    <li class="btn-floating btn-large waves-effect waves-light green btn-flat t1 tooltipped" data-position="bottom" data-tooltip="HOME"><a href="#"><i class="material-icons">home</i></a></li>
-                    <li class="btn-floating btn-large waves-effect waves-light green btn-flat t1 tooltipped" data-position="bottom" data-tooltip="Contact"><a href="#"><i class="material-icons">contacts</i></a></li>
-                    <li class="btn-floating btn-large waves-effect waves-light green btn-flat t1 tooltipped" data-position="bottom" data-tooltip="Bolgs"><a href="#"><i class="material-icons">rss_feed</i></a></li>
-                    <li class="btn-floating btn-large waves-effect waves-light green btn-flat t1 tooltipped" data-position="bottom" data-tooltip="Ideas"><a href="#"><i class="material-icons">emoji_objects</i></a></li>
-                        <li class="waves-effect waves-light"><a href="#"><i class="material-icons tooltipped" data-target="sh" class="sidenav-trigger" data-position="bottom" data-tooltip="search">search</i></a></li>
-                    <li class="tooltipped waves-effect waves-light" data-position="bottom" data-tooltip="CLICK HEAR FOR FREE CALL TO ME"><a ><i class="material-icons left" >call</i>FREE Call</a></li>
+                    <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="HOME"><a href="#"><i class="material-icons t4">home</i></a></li>
+                    <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Contact"><a href="#"><i class="material-icons t4">contacts</i></a></li>
+                    <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Bolgs"><a href="#"><i class="material-icons t4">rss_feed</i></a></li>
+                    <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Ideas"><a href="#"><i class="material-icons t4">emoji_objects</i></a></li>
+                    <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="search"><a href="#"><i class="material-icons t4" data-position="bottom" data-tooltip="search">search</i></a></li>
+                    <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="CLICK HEAR FOR FREE CALL TO ME"><a href="#" class="t4"><i class="material-icons left" >call</i>FREE Call</a></li>
                   </ul>
                 </div>
             </nav>
     </div>
             <ul class="sidenav" id="mobile-demo">
-                  
-                <li>
-                    <div class="user-view">
-                        <div class="background">
-                            <img class="brand-logo t3" src="img/1.gif" alt="">
-                        </div>
+                <li class="hoverable">
+                    <div class="user-view container">
                         <a href="#">
-                            <img src="img/profile.png" alt="" class="circle">
+                            <center><img src="img/profile.png" alt="" class="circle hoverable"></center>
                         </a>
                         <span class="name"><span class="material-icons left">account_box</span>Muhammad Muddasar Sabir</span>
                         <span class="email"><span class="material-icons left">email</span>mudasarsabir@gmail.com</span>
                     </div>
                 </li>
-
-                <li><a href="#"><i class="material-icons">home</i>Home</a></li>
-                <li><a href="#"><i class="material-icons">contacts</i>Contact</a></li>
-                <li><a href="#"><i class="material-icons">rss_feed</i>Bolgs</a></li>
-                <li><a href="#"><i class="material-icons">emoji_objects</i>Ideas</a></li>
-                <li><a href="#"><i class="material-icons">call</i>Free call</a></li>
+                
+                <hr class="black container"><br>
+                <li class="hoverable"><a href="#" class="waves-effect"><i class="material-icons">home</i>Home</a></li>
+                <li class="hoverable"><a href="#" class="waves-effect"><i class="material-icons">contacts</i>Contact</a></li>
+                <li class="hoverable"><a href="#" class="waves-effect"><i class="material-icons">rss_feed</i>Bolgs</a></li>
+                <li class="hoverable"><a href="#" class="waves-effect"><i class="material-icons">emoji_objects</i>Ideas</a></li>
+                <li class="hoverable"><a href="#" class="waves-effect"><i class="material-icons">call</i>Free call</a></li>
+                <center><h5 class="">Social Media <span class="material-icons">share</span></h5></center>
+                <hr class="black container  container"><br> 
+                    <a href="#"><i class="fa fa-3x fa-twitter black-text"></i></a>
+                    <a href="#"><i class="fa fa-3x fa-github black-text"></i></a>
+                    <a href="#"><i class="fa fa-3x fa-facebook black-text"></i></a>
+                    <a href="#"><i class="fa fa-3x fa-linkedin black-text"></i></a>
+                <br><br>
             </ul>
             <div class="" style="height: 1000px;">
-                <nav class="hide">
+                <nav class="hide" id="navbar">
                     <div class="nav-wrapper">
                       <form class="">
                         <div class="input-field">
@@ -66,7 +72,7 @@
                     </div>
                 </nav>
             </div>
-            
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
