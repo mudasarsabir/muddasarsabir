@@ -23,25 +23,29 @@
 }
 h5
 {
-    font-family: 'Acme', sans-serif;
-    font-family: 'Electrolize', sans-serif;
+    /* font-family: 'Acme', sans-serif;
+    font-family: 'Electrolize', sans-serif; */
     font-family: 'Libre Baskerville', serif;
-    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster', cursive;
     font-family: 'Monoton', cursive;
     font-family: 'Orbitron', sans-serif;
     font-family: 'Play', sans-serif;
-    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', cursive; */
+}
+.h-2-1
+{
+    font-family: 'Lobster', cursive;
 }
 h2
 {
-    font: bold;
     font-family: 'Libre Baskerville', sans-serif;
 }
 .t6
 {
-    width: 20em;
+    height:6em;
 }
-.t7
+.p-1
 {
-    height: auto;
+    font-size: 130%;
+    font-family: 'Electrolize', sans-serif;
 }
