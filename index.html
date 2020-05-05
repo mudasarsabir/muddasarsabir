@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materialize website</title>
-    
     <link href="https://fonts.googleapis.com/css?family=Acme|Electrolize|Libre+Baskerville:700|Lobster|Monoton|Orbitron|Play|Righteous&display=swap" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -13,9 +12,8 @@
     <!--Import fontawesome.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
-    
+  
 </head>
-
 <body>
 <header>
     <div class="navbar-fixed">
@@ -31,7 +29,7 @@
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Contact"><a href="#"><i class="material-icons t4">contacts</i></a></li>
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Bolgs"><a href="#"><i class="material-icons t4">rss_feed</i></a></li>
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Ideas"><a href="#"><i class="material-icons t4">emoji_objects</i></a></li>
-                    <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="search"><a href="#"><i class="material-icons t4" data-position="bottom" data-tooltip="search">search</i></a></li>
+                    <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="search" id="flip"><a href="#"><i class="material-icons t4">search</i></a></li>
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="CLICK HEAR FOR FREE CALL TO ME"><a href="#" class="t4"><i class="material-icons left" >call</i>FREE Call</a></li>
                 </ul>
             </div>
@@ -49,7 +47,6 @@
                         <span class="email"><span class="material-icons left">email</span>mudasarsabir@gmail.com</span>
                     </div>
                 </li>
-                
                 <hr class="black container">
                 <li class="hoverable"><a href="#" class="waves-effect"><i class="material-icons">home</i>Home</a></li>
                 <li class="hoverable"><a href="#" class="waves-effect"><i class="material-icons">contacts</i>Contact</a></li>
@@ -64,24 +61,24 @@
                 <a href="#"><i class="fa fa-3x fa-linkedin black-text"></i></a>
                 <br><br>
             </ul>
-</header>
-
-    <div class="">
-                    
-        <!-- <div class="">
-            <div class="row">
-            <div class="left col s4"><img class="" src="img/banner.png"></div>
-            <div class="col s8">
-                <h5 class="white-text">This is me</h5>
-                <h2 class="white-text">Muhammad Muddasar Sabir</h2>
-                <p class="white-text">This is my portfolio website.That will explain about my experience, skill, education etc.</p>
+</header>      
+<div>
+    <div id="panel">
+        <nav class="hoverable grey lighten-5">
+            <div class="nav-wrapper">
+              <form class="required">
+                <div class="input-field">
+                  <input id="search" type="search" class="validate" required>
+                  <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                  <i class="material-icons">close</i>
                 </div>
-            </div> 
-        </div> -->
-        
+              </form>
+            </div>
+        </nav> 
+    </div>
             <div class="section">
                 <center><div class="row container">
-                    <img class="right center" src="img/profile-2.png">
+                    <img class="right " src="img/profile-2.png">
                     <h3 class="h-2-1">This is me</h3>
                 <h2 class="header">Muhammad Muddasar Sabir</h2>
                 
@@ -101,20 +98,6 @@
                 <div class="parallax"><img src="img/15.jpg"></div>
             </div>
     </div>
-    
-    
-                <!-- <div class="red lighten-1" style="height: 50%"></div>
-                <nav class="hide" id="navbar">
-                    <div class="nav-wrapper">
-                      <form class="">
-                        <div class="input-field">
-                          <input id="search" type="search" required>
-                          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                          <i class="material-icons">close</i>
-                        </div>
-                      </form>
-                    </div>
-                </nav> -->
 
 <footer>
     <div class="section">
@@ -127,6 +110,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         //navbar menu function
@@ -137,8 +121,15 @@
         $(document).ready(function(){
             $('.tooltipped').tooltip();
         });
+        //Animation on image
         $(document).ready(function(){
             $('.parallax').parallax();
+        });
+        //show hide toggle function
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").toggle("slow");
+            });
         });
     </script>
 </body>
