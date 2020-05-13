@@ -5,4 +5,4 @@
 # Material-Design-portfolio
 This is my an other portfolio website.
 https://muddasarsabir.github.io/Material-Design-portfolio
-https://muddasarsabir.netlify.app/
+https://muddasarsabir.netlify.app
