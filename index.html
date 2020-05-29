@@ -15,7 +15,9 @@
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import fontawesome.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/circle.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -110,18 +112,18 @@
                 <div class="row container">
                 <h2 class="header">Education</h2>
                 <!-- <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p> -->
-                <ul class="collapsible popout">
+                <ul class="collapsible popout hoverable">
                   <li>
-                    <div class="collapsible-header"><i class="material-icons">school</i>Bachelor</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-header hoverable"><i class="material-icons">school</i>Bachelor</div>
+                    <div class="collapsible-body hoverable"><span>Lorem ipsum dolor sit amet.</span></div>
                   </li>
                   <li>
-                    <div class="collapsible-header"><i class="material-icons">school</i>College</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-header hoverable"><i class="material-icons">school</i>College</div>
+                    <div class="collapsible-body hoverable"><span>Lorem ipsum dolor sit amet.</span></div>
                   </li>
                   <li>
-                    <div class="collapsible-header"><i class="material-icons">school</i>School</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-header hoverable"><i class="material-icons">school</i>School</div>
+                    <div class="collapsible-body hoverable"><span>Lorem ipsum dolor sit amet.</span></div>
                   </li>
                 </ul>
                 </div>
@@ -132,18 +134,39 @@
             <div class="section">
                 <div class="row container">
                 <h2 class="header">Experience</h2>
-                  <ul class="collapsible popout">
+                  <ul class="collapsible popout hoverable">
                     <li>
-                      <div class="collapsible-header"><i class="material-icons">language</i>programing Languages</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      <div class="collapsible-header hoverable"><i class="material-icons">language</i>programing Languages</div>
+                      <div class="collapsible-body hoverable">
+                        <span>C++</span>
+                        <!-- green -->
+                        <!-- <div class="clearfix">
+                          <div class="c100 p80 big green">
+                              <span>80%</span>
+                              <div class="slice">
+                                  <div class="bar"></div>
+                                  <div class="fill"></div>
+                              </div>
+                          </div>
+
+                          <div class="c100 p25 green">
+                              <span>25%</span>
+                              <div class="slice">
+                                  <div class="bar"></div>
+                                  <div class="fill"></div>
+                              </div>
+                          </div>
+                        </div> -->
+                      <!-- /green -->
+                      </div>
                     </li>
                     <li>
-                      <div class="collapsible-header"><i class="material-icons">storage</i>Data Base</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      <div class="collapsible-header hoverable"><i class="material-icons">storage</i>Data Base</div>
+                      <div class="collapsible-body hoverable"><span>Lorem ipsum dolor sit amet.</span></div>
                     </li>
                     <li>
-                      <div class="collapsible-header"><i class="material-icons">build</i>Tool</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      <div class="collapsible-header hoverable"><i class="material-icons">build</i>Tool</div>
+                      <div class="collapsible-body hoverable"><span>Lorem ipsum dolor sit amet.</span></div>
                     </li>
                   </ul>
               </div>
@@ -175,33 +198,43 @@
         </div>
     </div>
 </footer> -->
-<footer class="page-footer docs-footer grey-text text-darken-3 white">
+    <footer class="page-footer docs-footer grey-text text-darken-3 white">
       <div class="container">
         <div class="row">
           <div class="col s12 m10 offset-m1">
-            <div class="row">
-              <div class="col l7 s12">
-                <h5 class="black-text">About Me</h5>
-                <p class="grey-text text-darken-2">My name is Muhammad Mudassar Sabir. I'm from Pakistan. I currently study bachelor science in software engineering (BSSE) in CUI Sahiwal (COMSATS University Islamabad - Sahiwal Campus).</p>
-              </div>
-              <div class="col l5 s12">
-                <h5 class="black-text">Social Media <span class="material-icons">share</span></h5>
+            <div class="col l12 s12">
+              <h5 class="black-text">About Me</h5>
+              <p class="grey-text text-darken-2">My name is Muhammad Mudassar Sabir. I'm from Pakistan. I currently study bachelor science in software engineering (BSSE) in CUI Sahiwal (COMSATS University Islamabad - Sahiwal Campus).</p>
+            </div>
+            <div class="col l7 s12 left">
+              <h5 class="black-text">Social Media <span class="material-icons">share</span></h5>
                 <ul class="row">
                   <!-- <li><a class="github-button hoverable col l12 s12 btn-larg" href="https://github.com/muddasarsabir" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @muddasarsabir on GitHub">Follow @muddasarsabir</a></li>
                   <li><a href="https://twitter.com/intent/tweet?screen_name=mudasarsabir&ref_src=twsrc%5Etfw" class="twitter-follow-button col l12 s12" data-size="large" data-dnt="true" data-show-count="false">Tweet to @mudasarsabir</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li> -->
                   <li>
                     <center>
                       <!-- <a href="https://twitter.com/intent/tweet?screen_name=mudasarsabir&ref_src=twsrc%5Etfw" class="btn-floating btn-large waves-effect waves-light black hoverable"><i class="fa fa-envelope"></i></a>
-                      <a href="https://twitter.com/intent/tweet?screen_name=mudasarsabir&ref_src=twsrc%5Etfw" class="btn-floating btn-large waves-effect waves-light black hoverable"><i class="fa fa-youtube"></i></a><br> -->
-                      <a href="https://www.facebook.com/mudasar.sabir.9" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverable"><i class="fa fa-facebook black-text"></i></a>
-                      <!-- <a href="https://twitter.com/intent/tweet?screen_name=mudasarsabir&ref_src=twsrc%5Etfw" class="btn-floating btn-large waves-effect waves-light black hoverable"><i class="fa fa-twitter"></i></a> -->
-                      <a href="https://github.com/muddasarsabir" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverable"><i class="fa fa-github black-text"></i></a>
-                      <a href="https://www.linkedin.com/in/mudasar-sabir-74680796" class="btn-floating btn-large waves-grey-lighten-5 waves-light transparent hoverable"><i class="fa fa-linkedin black-text"></i></a>
-                      <a href="https://wa.me/+923087921962?text=Hi Their!" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverable"><i class="fa fa-whatsapp black-text"></i></a>
+                      <a href="https://twitter.com/intent/tweet?screen_name=mudasarsabir&ref_src=twsrc%5Etfw" class="btn-floating btn-large waves-effect waves-light black hoverable"><i class="fa fa-youtube"></i></a><br>
+                      <a href="https://twitter.com/intent/tweet?screen_name=mudasarsabir&ref_src=twsrc%5Etfw" class="btn-floating btn-large waves-effect waves-light black hoverable"><i class="fa fa-twitter"></i></a> -->
+                      <a href="https://www.facebook.com/mudasar.sabir.9" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverable"><i class="fab fa-facebook-f black-text"></i></a>
+                      <a href="https://github.com/muddasarsabir" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverable"><i class="fab fa-github black-text"></i></a>
+                      <a href="https://www.linkedin.com/in/mudasar-sabir-74680796" class="btn-floating btn-large waves-grey-lighten-5 waves-light transparent hoverable"><i class="fab fa-linkedin-in black-text"></i></a>
+                      <a href="https://wa.me/+923087921962?text=Hi Their!" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverable"><i class="fab fa-whatsapp black-text"></i></a>
                     </center>
                   </li>
                 </ul>
-              </div>
+            </div>
+            <div class="row col l5 s12 right">
+              <h5 class="black-text">Crypto Currency <span class="material-icons"></span></h5>
+              <ul class="row">
+                <li>
+                  <center>
+                    <a href="https://wa.me/+923087921962?text=Hi Their!" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverable"><i class="fab fa-btc black-text"></i></a>
+                    <a href="https://wa.me/+923087921962?text=Hi Their!" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverable"><i class="fab fa-monero black-text"></i></a>
+                    <a href="https://wa.me/+923087921962?text=Hi Their!" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverable"><i class="fab fa-ethereum black-text"></i></a>
+                  </center>
+                </li>
+              </ul>
             </div>
             <div>
               <h5 class="black-text">Contact Me</h5>
@@ -296,7 +329,7 @@
           <a class="right black-text" href="https://github.com/muddasarsabir/Material-Design-portfolio/blob/master/LICENSE"><small>MIT License</small></a>
         </div>
       </div>
-      <!-- <div id="modal1" class="modal">
+    <!-- <div id="modal1" class="modal">
       <div class="modal-content">
         <div class="input-field">
           <i class="material-icons black-text prefix">account_circle</i>
@@ -314,10 +347,10 @@
           <label for="icon_textarea">Message</label>
         </div>
       </div>
-    <div class="modal-footer">
-      <a href="#!" class="btn transparent hoverable modal-close waves-effect waves-grey-lighten-5 black-text"><i class="material-icons right black-text">send</i>Send</a>
-    </div>
-  </div> -->
+      <div class="modal-footer">
+        <a href="#!" class="btn transparent hoverable modal-close waves-effect waves-grey-lighten-5 black-text"><i class="material-icons right black-text">send</i>Send</a>
+      </div>
+    </div> -->
       <div class="fixed-action-btn">
         <!-- <div class="fixed-action-btn">
           <a class="btn-floating btn-large waves-effect waves-grey-lighten-5 white hoverable black-pulse">
@@ -328,7 +361,7 @@
             <li><a href="https://p.freecallinc.com/voip/browser-phone/browser-phone.php?cid=85031&sid=85213&psp=12" class="btn-floating btn-large waves-effect waves-grey-lighten-5 transparent hoverabl tooltipped" data-position="left" data-tooltip="CLICK HEAR FOR FREE CALL TO ME"><i class="material-icons black-text">call</i></a></li>
           </ul>
         </div> -->
-        <a href="https://p.freecallinc.com/voip/browser-phone/browser-phone.php?cid=85031&sid=85213&psp=12" class="btn-floating btn-large waves-effect waves-light hoverable white pulse tooltipped" data-position="left" data-tooltip="CLICK HEAR FOR FREE CALL TO ME"><i class="material-icons black-text">call</i></a>
+        <a href="https://p.freecallinc.com/voip/browser-phone/browser-phone.php?cid=85031&sid=85213&psp=12"><button class="btn-floating btn-large waves-effect waves-grey-lighten-5 hoverable white pulse tooltipped" data-position="left" data-tooltip="CLICK HEAR FOR FREE CALL TO ME"><i class="material-icons black-text">call</i></button></a>
       </div>
     </footer>
 
