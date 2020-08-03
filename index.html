@@ -181,7 +181,7 @@
             <div class="section">
                 <div class="container">
                 <h2 class="header">Projects</h2>
-                <div class="carousel" style="margin-top: -15%;margin-bottom: -20%;">
+                <div class="carousel">
                   <h6 class="carousel-item" ><img src="img/slider/slider-1.PNG" class="materialboxed slider hoverable"><center><a href="#" class="black-text"><b>Website</b></a></center></h6>
                   <h6 class="carousel-item" ><img src="img/slider/slider-2.PNG" class="materialboxed slider hoverable"><center><a href="#" class="black-text"><b>Website</b></a></center></h6>
                   <h6 class="carousel-item" ><img src="img/slider/slider-3.PNG" class="materialboxed slider hoverable"><center><a href="#" class="black-text"><b>Website</b></a></center></h6>
@@ -234,10 +234,21 @@
             <ul>
               <li>
                 <center>
-                  <a href="" class="btn-floating btn-large waves-effect waves-grey-lighten-5 white hoverable"><i class="fab fa-btc black-text"></i></a>
+                  <a href="" class="btn-floating btn-large waves-effect waves-grey-lighten-5 white hoverable modal-trigger" data-target="modal1"><i class="fab fa-btc black-text"></i></a>
                   <a href="" class="btn-floating btn-large waves-effect waves-grey-lighten-5 white hoverable"><i class="fab fa-monero black-text"></i></a>
                   <a href="" class="btn-floating btn-large waves-effect waves-grey-lighten-5 white hoverable"><i class="fab fa-ethereum black-text"></i></a>
                 </center>
+
+                <div id="modal1" class="modal black-text">
+                  <div class="modal-content">
+                    <h4>Good job!</h4>
+                    <p>You Copied The Coin Address</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-close btn white hoverable waves-effect waves-grey-lighten-5 black-text bold">close</a>
+                  </div>
+                </div>
+
               </li>
             </ul>
           </div>
@@ -403,6 +414,9 @@
         });
         $(document).ready(function(){
           $('.materialboxed').materialbox();
+        });
+        $(document).ready(function(){
+          $('.modal').modal();
         });
     </script>
 </body>
