@@ -70,3 +70,12 @@ b
 {
     height: 50vh;
 }
+.left-boder-black{
+    border: 5px;
+    border-style: double;
+    border-color: black;
+    border-right: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+    padding-left: 10px;
+}
