@@ -45,9 +45,11 @@ h2
     font-family: 'Libre Baskerville', sans-serif;
 }
 .parallax-container {
-    height: 7em;
+    height: 5em;
   }
-      
+.p-c {
+    height: 7em;
+} 
 .p-1
 {
     font-size: 130%;
@@ -80,8 +82,8 @@ b
     padding-left: 10px;
 }
 .grad1 {
-    background-image: repeating-linear-gradient( to right, white 2%, grey , black 3%);
+    background-image: repeating-linear-gradient( to right, gray 4% , black 8%);
   }
 .grad2 {
-    background-image: repeating-linear-gradient( to top, white 15%, grey , black 20%);
+    background-image: repeating-linear-gradient( to left, gray 4% , black 8%);
   }
