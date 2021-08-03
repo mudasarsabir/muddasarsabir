@@ -83,7 +83,7 @@ b
     background-image: repeating-linear-gradient( to right, white 1%, grey , black 2%);
   }
 .grad2 {
-    background-image: repeating-linear-gradient( to bottom, white 15%, grey , black 20%);
+    background-image: repeating-linear-gradient( to top, white 15%, grey , black 20%);
   }
 .grad3 {
     background-image: repeating-linear-gradient( to left, white 1%, grey , black 2%);
