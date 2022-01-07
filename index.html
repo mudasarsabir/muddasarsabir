@@ -34,7 +34,7 @@
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="HOME"><a href="index.html"><i class="material-icons black-text">home</i></a></li>
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Bolgs"><a href="blogs.html"><i class="material-icons black-text">rss_feed</i></a></li>
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Ideas"><a href="ideas.html"><i class="material-icons black-text">emoji_objects</i></a></li>
-                    <li><a class="website-counter waves-effect tooltipped hoverable black-text p-1" data-position="bottom" data-tooltip="Total Website Visitor"></a></li>
+                    
                   </ul>
               </div>
           </nav>
@@ -45,7 +45,7 @@
         <div class="user-view">
           <center>
             <a href="#"><img src="img/profile/left.webp" alt="" class="circle hoverable"></a>
-          </center><button class="website-counter btn waves-effect black-text p-1"></button>
+          </center>
           <span class="name"><span class="material-icons left">account_box</span>Muhammad Muddasar Sabir</span>
           <span class="email"><span class="material-icons left">email</span><a href="mailto:mudasarsabir@gmail.com" class="black-text"> mudasarsabir@gmail.com</a></span>
         </div>
@@ -55,7 +55,6 @@
       <li class="hoverable"><a href="index.html" class="waves-effect black-text"><i class="material-icons black-text">home</i>Home</a></li>
       <li class="hoverable"><a href="blogs.html" class="waves-effect black-text"><i class="material-icons black-text">rss_feed</i>Bolgs</a></li>
       <li class="hoverable"><a href="ideas.html" class="waves-effect black-text"><i class="material-icons black-text">emoji_objects</i>Ideas</a></li>
-      <!-- <li class="hoverable"></li> -->
       <center><h5>Social Media <span class="material-icons">share</span></h5></center>
       <hr class="black container"><br>
       <li>
@@ -81,6 +80,7 @@
 <div>
             <div class="parallax-container p-c">
               <div class="parallax grey lighten-5"></div>
+              <a class="right website-counter waves-effect black-text p-1"></a>
               <center><b><h3 class="">THIS IS ME</h3></b></center>
             </div>
             <div class="section z-depth-5">
@@ -438,7 +438,7 @@
           visitCount = 1;
           localStorage.setItem("page_view", 1);
         }
-        counterContainer.innerHTML = visitCount;
+        counterContainer.innerHTML =  visitCount;
       </script>
       <!--Visitor count end-->
 </body>
