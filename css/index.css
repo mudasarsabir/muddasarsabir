@@ -32,6 +32,10 @@ h5
     font-family: 'Play', sans-serif;
     font-family: 'Righteous', cursive; */
 }
+.style-17
+{
+    background-image: linear-gradient(150deg, navy 0%, dodgerblue 35%, skyblue 50%, gold 50%, orange 51%, red 100%);
+}
 .h-2-1
 {
     font-family:  'Electrolize', sans-serif;
