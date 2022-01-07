@@ -27,10 +27,11 @@
       <div class="navbar-fixed">
           <nav>
               <div class="nav-wrapper white hoverable grey lighten-5">
-                <a href="index.html" class="brand-logo"><img src="img/logo.webp" alt="Logo Image"></a>
+                <a href="index.html"><img class="brand-logo" src="img/logo.webp" alt="Logo Image"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
                 <img class="right hoverable" style="height: 100%;" src="img/etc/PAKISTAN-FLAG.webp" alt="PAKISTAN-FLAG">
                 <ul class="right hide-on-med-and-down">
+                    <li><div class="website-counter black-text p-1"></div></li>
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="HOME"><a href="index.html"><i class="material-icons black-text">home</i></a></li>
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Bolgs"><a href="blogs.html"><i class="material-icons black-text">rss_feed</i></a></li>
                     <li class="waves-effect tooltipped hoverable" data-position="bottom" data-tooltip="Ideas"><a href="ideas.html"><i class="material-icons black-text">emoji_objects</i></a></li>
@@ -260,7 +261,7 @@
                   <center>
                     <a href="https://www.facebook.com/mudasar.sabir.9" data-tooltip="FaceBook" data-position="top" class="tooltipped btn-floating btn-large waves-effect waves-grey-lighten-5 white hoverable"><i class="fab fa-facebook-f black-text"></i></a>
                     <a href="https://github.com/muddasarsabir" data-tooltip="GitHub" data-position="top" class="tooltipped btn-floating btn-large waves-effect waves-grey-lighten-5 white hoverable"><i class="fab fa-github black-text"></i></a>
-                    <a href="https://www.linkedin.com/in/mudasar-sabir-74680796" data-position="top" data-tooltip="linked In" class="tooltipped btn-floating btn-large waves-grey-lighten-5 waves-light white hoverable"><i class="fab fa-linkedin-in black-text"></i></a>
+                    <a href="https://www.linkedin.com/in/muddasarsabir" data-position="top" data-tooltip="linked In" class="tooltipped btn-floating btn-large waves-grey-lighten-5 waves-light white hoverable"><i class="fab fa-linkedin-in black-text"></i></a>
                     <a href="https://wa.me/+923087921962?text=Hi Their!" data-tooltip="Whats App" data-position="top" class="tooltipped btn-floating btn-large waves-effect waves-grey-lighten-5 white hoverable"><i class="fab fa-whatsapp black-text"></i></a>
                   </center>
                 </li>
@@ -425,5 +426,29 @@
 				}
 			</script>
       <!--Copy function end-->
+      <!--Visitor count start-->
+      <script>
+      var counterContainer = document.querySelector(".website-counter");
+      var resetButton = document.querySelector("#reset");
+      var visitCount = localStorage.getItem("page_view");
+
+      // Check if page_view entry is present
+      if (visitCount) {
+        visitCount = Number(visitCount) + 1;
+        localStorage.setItem("page_view", visitCount);
+      } else {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+      }
+      counterContainer.innerHTML = visitCount + 'visitor';
+
+      // Adding onClick event listener
+      resetButton.addEventListener("click", () => {
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+        counterContainer.innerHTML = visitCount;
+      });
+      </script>
+      <!--Visitor count end-->
 </body>
 </html>
