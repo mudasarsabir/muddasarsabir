@@ -45,7 +45,7 @@
         <div class="user-view">
           <center>
             <a href="#"><img src="img/profile/left.webp" alt="" class="circle hoverable"></a>
-          </center>
+          </center><button class="website-counter btn waves-effect black-text p-1"></button>
           <span class="name"><span class="material-icons left">account_box</span>Muhammad Muddasar Sabir</span>
           <span class="email"><span class="material-icons left">email</span><a href="mailto:mudasarsabir@gmail.com" class="black-text"> mudasarsabir@gmail.com</a></span>
         </div>
@@ -55,7 +55,7 @@
       <li class="hoverable"><a href="index.html" class="waves-effect black-text"><i class="material-icons black-text">home</i>Home</a></li>
       <li class="hoverable"><a href="blogs.html" class="waves-effect black-text"><i class="material-icons black-text">rss_feed</i>Bolgs</a></li>
       <li class="hoverable"><a href="ideas.html" class="waves-effect black-text"><i class="material-icons black-text">emoji_objects</i>Ideas</a></li>
-      <li><a class="website-counter waves-effect hoverable black-text p-1"></a></li>
+      <!-- <li class="hoverable"></li> -->
       <center><h5>Social Media <span class="material-icons">share</span></h5></center>
       <hr class="black container"><br>
       <li>
@@ -428,17 +428,17 @@
       <!--Copy function end-->
       <!--Visitor count start-->
       <script>
-      var counterContainer = document.querySelector(".website-counter");
-      var visitCount = localStorage.getItem("page_view");
-      // Check if page_view entry is present
-      if (visitCount) {
-        visitCount = Number(visitCount) + 1;
-        localStorage.setItem("page_view", visitCount);
-      } else {
-        visitCount = 1;
-        localStorage.setItem("page_view", 1);
-      }
-      counterContainer.innerHTML = visitCount;
+        var counterContainer = document.querySelector(".website-counter");
+        var visitCount = localStorage.getItem("page_view");
+        // Check if page_view entry is present
+        if (visitCount) {
+          visitCount = Number(visitCount) + 1;
+          localStorage.setItem("page_view", visitCount);
+        } else {
+          visitCount = 1;
+          localStorage.setItem("page_view", 1);
+        }
+        counterContainer.innerHTML = visitCount;
       </script>
       <!--Visitor count end-->
 </body>
